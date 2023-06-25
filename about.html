@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedCards</title>
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body style="overflow-x: hidden;">
+    <!-- header  -->
+    <header class="header box-shadow-sm">
+      <div class="bg-dark topbar topbar-dark">
+          <div class="container">
+              <div class="d-md-none topbar-text dropdown"><a class="topbar-link dropdown-toggle" href="#"
+                      data-bs-toggle="dropdown">Useful links</a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item"><i class="fas fa-headset me-1"></i>+92 3175547011</a></li>
+                      <li><a class="dropdown-item" href="order-tracking.html"><i
+                                  class="fas fa-map-marker-alt"></i>Order tracking </a></li>
+                  </ul>
+              </div>
+              <div class="d-none d-md-inline-block topbar-text"><i class="fas fa-headset me-1"></i><span
+                      class="text-white">Support</span><a class="topbar-link">+92 3175547011</a></div>
+              <div class="d-none d-md-block">
+                  <div id="slider">
+                      <div class="topbar-text"><span>Free shipping for orders over $200</span></div>
+                      <div class="topbar-text"><span>We return money within 30 days</span></div>
+                      <div class="topbar-text"><span>Friendly 24/7 customer support</span></div>
+                  </div>
+              </div>
+              <div><a class="d-none d-md-inline-block topbar-link me-4" href="#"><i class="fas fa-map-marker-alt"></i>
+                      Order tracking</a>
+                  <div class="topbar-text dropdown"><a class="topbar-link dropdown-toggle" href="#"
+                          data-bs-toggle="dropdown"><img class="me-1" width="20" src="assets/img//flags/en.png"
+                              alt="English">Eng / $ </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                          <li class="dropdown-item"><select>
+                                  <option value="usd">$ USD</option>
+                                  <option value="eur">€ EUR</option>
+                                  <option value="ukp">£ UKP</option>
+                                  <option value="jpy">¥ JPY</option>
+                              </select></li>
+                          <li><a class="dropdown-item pb-1" href="#"><img class="me-1" width="20"
+                                      src="assets/img//flags/fr.png" alt="Français">Français</a></li>
+                          <li><a class="dropdown-item pb-1" href="#"><img class="me-1" width="20"
+                                      src="assets/img//flags/de.png" alt="Deutsch">Deutsch</a></li>
+                          <li><a class="dropdown-item" href="#"><img class="me-1" width="20"
+                                      src="assets/img//flags/it.png" alt="Italiano">Italiano</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <nav
+          class="navbar navbar-light navbar-expand-lg text-truncate text-uppercase text-left d-flex align-items-start align-self-center">
+          <div class="container"><a class="navbar-brand d-none d-sm-block" href="index.html" style="min-width: 7rem;">
+                  <img width="142" src="assets/img//logo-16720207682.png" alt=""></a><a
+                  class="navbar-brand d-sm-none me-2" href="index.html" style="min-width: 4.625rem;"><img width="74"
+                      src="assets/img//logo-16720207682.png" alt=""></a>
+              <div class="input-group d-none d-lg-flex mx-4">
+                  <input class="form-control custom-select form-control custom-select" type="text"
+                      placeholder="Search for products">
+                  <div class="input-group-append-overlay"><span class="input-group-text"><i
+                              class="fas fa-search fa-sm fa-fw"></i></span></div>
+
+              </div>
+              <div class="d-flex navbar-toolbar"><button class="navbar-toggler" data-toggle="collapse" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span
+                          class="navbar-toggler-icon"></span></button><a class="d-none navbar-tool" href="#"><span
+                          class="navbar-tool-tooltip">Expand menu</span>
+                      <div class="navbar-tool-icon-box"><i class="fas fa-bars"></i></div>
+                  </a><a class="navbar-tool" href="#"><span class="navbar-tool-tooltip">Wishlist</span>
+                      <div class="navbar-tool-icon-box"><i class="far fa-heart fa-lg"></i></div>
+                  </a><a class="navbar-tool ml-1 ml-lg-0 me-n1 me-lg-2" href="#">
+                      <div class="navbar-tool-icon-box"><i class="far fa-user fa-lg"></i></div>
+                      <div class="navbar-tool-text ml-n3 hide-on-small"><small>Hello, Sign in</small> My Account
+                      </div>
+                  </a>
+                  <div
+                      class="align-items-center align-content-start mb-auto justify-content-xl-start navbar-tool dropdown ml-3">
+                      <a class="text-center bg-secondary navbar-tool-icon-box dropdown-toggle"
+                          href="shop-cart.html"><span class="navbar-tool-label">4</span><i
+                              class="fas fa-shopping-cart fa-lg"></i></a><a class="navbar-tool-text hide-on-small"
+                          href="shop-cart.html"><small>My Cart</small> $265.00 </a></div>
+              </div>
+          </div>
+      </nav>
+      <nav class="navbar navbar-light navbar-expand-lg navbar-stuck-menu mt-n2 pt-0 pb-2">
+          <div class="container">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="input-group d-lg-none my-3">
+                      <input class="form-control custom-select form-control custom-select" type="text"
+                          placeholder="Search for products">
+                  </div>
+
+              </div>
+          </div>
+      </nav>
+      <nav class="navbar navbar-light navbar-expand-md p-0 bg-red" style="background: rgb(175,24,30);">
+          <div class="container"><a class="navbar-brand align-items-center" href="#"></a><button
+                  data-toggle="collapse" class="navbar-toggler" data-target="#navbarOnHover" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#navbarOnHover" aria-controls="navbarOnHover"
+                  aria-expanded="false" aria-label="Toggle navigation"><span
+                      class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarOnHover">
+                  <ul class="navbar-nav mx-auto" style="padding-left: 0.15rem;">
+                      <li class="nav-item">
+                          <a class="nav-link text-white custom-hover" href="/index.html">HOME</a>
+                      </li>
+                      <li class="nav-item dropdown has-megamenu"><a
+                              class="nav-link text-white custom-hover dropdown-toggle" href="#"
+                              data-bs-toggle="dropdown">CARDS BY OCCASSIONS <i
+                                  class="fas fa-chevron-down fa-sm fa-fw"></i></a>
+                          <div class="dropdown-menu megamenu" role="menu">
+                              <div class="row">
+                                  <div class="col-md-3 justify-content-around border-end">
+                                      <div class="col-megamenu">
+                                          <ul class="list-unstyled lh-lg">
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                      href="./Birthday.html">Birthday Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                      href="/father.html">Father's Day Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                      href="./thankyou.html">Thankyou Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                      href="#">Encouragement / Support Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                      href="#">Friendship Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Hello
+                                                      Cards</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 border-end">
+                                      <div class="col-megamenu">
+                                          <ul class="list-unstyled lh-lg">
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Get Well
+                                                      Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Gift
+                                                      Card Holders</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Gift
+                                                      Enclosure Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Good
+                                                      Luck Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Goodbye
+                                                      Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Sorry
+                                                      Cards</a></li>
+                                              <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                      href="./categories.html">View all cards</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6"><img class="img-fluid" src="assets/img//q4ucXLxoGGU.jpg"
+                                          alt="">
+                                      <div class="card-body">
+                                          <h5 class="card-title mt-3 B-a"><a href="/Birthday.html">Browse Our Birthday
+                                                  Collection</a></h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="nav-item"><a class="nav-link active text-white custom-hover"
+                              href="./categories.html">VIEW ALL CARDS</a></li>
+                      <li class="nav-item dropdown" data-bs-hover="dropdown"><a
+                              class="nav-link text-white custom-hover dropdown-toggle" href="/categories.html"
+                              id="dropdownMenuLink2" data-bs-toggle="dropdown">BRANDS</a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                              <a href="#" class="dropdown-item">Joyful Greeting</a>
+                              <a href="#" class="dropdown-item"> Blissful Wishes
+                              </a>
+                              <a href="#" class="dropdown-item"> Celebrate Life
+                              </a>
+                              <a href="#" class="dropdown-item"> Delightful Expressions
+
+                              </a>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white custom-hover" href="/about.html">ABOUT US </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white custom-hover" href="/contact.html">CONTACT US</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <!-- header end  -->
+  <main class="container-fluid px-0">
+    <!-- Row: Shop online-->
+    <section class="row no-gutters">
+      <div class="col-md-6" style="min-height: 15rem; background-image: url(assets/img/about-1.jpg);" data-aos="slide-right" data-aos-delay="600">
+      </div>
+      <div class="col-md-6 px-3 px-md-5 py-5" data-aos="slide-left" data-aos-delay="600">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 class="h3 pb-3">A Journey of Celebrations</h2>
+          <p class="font-size-sm pb-3 text-muted">We embarked on our journey with a passion for spreading joy and creating meaningful connections through the art of greeting cards. From humble beginnings, we have grown into a platform that brings smiles to countless faces on special occasions. Our dedication to crafting heartfelt messages and unique designs has made us a trusted companion in celebrating life's moments.</p>
+          <a class="btn btn-danger" href="#">Discover Our Journey</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="row no-gutters">
+      <div class="col-md-6 bg-position-center bg-size-cover bg-secondary order-md-2" style="min-height: 15rem; background-image: url(assets/img/about-2.jpg);"data-aos="slide-left" data-aos-delay="600"><span class="split-section-arrow arrow-right"></span></div>
+      <div class="col-md-6 px-3 px-md-5 py-5 order-md-1"data-aos="slide-right" data-aos-delay="600">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 class="h3 pb-3">Spreading Love, One Card at a Time</h2>
+          <p class="font-size-sm pb-3 text-muted"> At RedCard Limited, our mission is to touch hearts and create lasting memories through the power of thoughtful messages. We believe in the beauty of human connections and strive to help people express their emotions and affection through our carefully curated collection of greeting cards. Each card is designed with love and attention to detail, aiming to make every occasion truly special.</p><a class="btn btn-danger" href="#">Learn More About Our Mission</a>
+        </div>
+      </div>
+    </section>
+    <!-- Row: Mobile app-->
+    <section class="row no-gutters">
+      <div class="col-md-6 bg-position-center bg-size-cover bg-secondary" style="min-height: 15rem; background-image: url(assets/img//about-4.jpg);"data-aos="slide-right" data-aos-delay="600"></div>
+      <div class="col-md-6 px-3 px-md-5 py-5"data-aos="slide-left" data-aos-delay="600">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 class="h3 pb-3">Bringing Convenience to Your Fingertips</h2>
+          <p class="font-size-sm pb-3 text-muted">We understand the need for convenience in today's fast-paced world. That's why we have developed our user-friendly mobile app, making it easier than ever to send personalized greeting cards on the go. Our app offers a seamless browsing experience, allowing you to explore a wide range of card designs, customize messages, and schedule deliveries. Stay connected and spread joy with just a few taps.</p>
+          <a class="btn-market btn-apple mr-3 mb-3" href="#" role="button">
+            <span class="btn-market-subtitle">Download on the</span>
+            <span class="btn-market-title">App Store</span></a><a class="btn-market btn-google mb-3" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="row no-gutters">
+      <div class="col-md-6 bg-position-center bg-size-cover bg-secondary order-md-2" style="min-height: 15rem; background-image: url(assets/img/about-3.jpg);" data-aos="slide-left" data-aos-delay="600"></div>
+      <div class="col-md-6 px-3 px-md-5 py-5 order-md-1"data-aos="slide-right" data-aos-delay="600">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 class="h3 pb-3">Capturing Moments of Happiness</h2>
+          <p class="font-size-sm pb-3 text-muted"> The perfect greeting card is incomplete without a beautiful picture that captures the essence of the occasion. Whether it's a heartfelt portrait, a candid snapshot, or a scenic landscape, the right image can evoke emotions and bring your message to life. Consider selecting pictures that reflect the theme of the card, such as a festive party scene, a serene nature backdrop, or a close-up of a smiling face. Choose images that resonate with the intended recipient and add a touch of personalization to every card.</p><a class="btn btn-danger" href="#">Explore Picture Ideas</a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- Section: Team-->
+    <section class="container py-3 py-lg-5 mt-4 mb-3">
+      <h2 class="h3 my-2">Our core team</h2>
+      <p class="font-size-sm text-muted">People behind your great Ecards</p>
+      <div class="row pt-3">
+        <div class="col-lg-4 col-sm-6 mb-grid-gutter">
+          <div class="media align-items-center">
+            <img class="d-inline-block rounded-circle" src="assets/img/team/03.jpg" width="96" alt="Jonathan Doe">
+            <div class="media-body pl-3 pt-4">
+              <h6 class="font-size-base pt-1 mb-1">Jonathan Doe</h6>
+              <p class="font-size-ms text-muted mb-0">CEO, Co-founder</p><a class="nav-link-style font-size-ms text-nowrap" href="mailto:johndoe@gmail.com"><i class="far fa-envelope fa-lg mt-2 mb-4 text-danger"></i>johndoe@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-grid-gutter">
+          <div class="media align-items-center"><img class="d-inline-block rounded-circle" src="assets/img/team/04.jpg" width="96" alt="Barbara Palson">
+            <div class="media-body pl-3">
+              <h6 class="font-size-base pt-1 mb-1">Barbara Palson</h6>
+              <p class="font-size-ms text-muted mb-0">Chief of Marketing</p><a class="nav-link-style font-size-ms text-nowrap" href="mailto:b.palson@gmail.com"><i class="far fa-envelope fa-lg mt-2 mb-4 text-danger"></i>b.palson@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-grid-gutter">
+          <div class="media align-items-center"><img class="d-inline-block rounded-circle" src="assets/img/team/06.jpg" width="96" alt="William Smith">
+            <div class="media-body pl-3">
+              <h6 class="font-size-base pt-1 mb-1">William Smith</h6>
+              <p class="font-size-ms text-muted mb-0">Financial director</p><a class="nav-link-style font-size-ms text-nowrap" href="mailto:w.smith@gmail.com"><i class="far fa-envelope fa-lg mt-2 mb-4 text-danger"></i>w.smith@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-grid-gutter pt-4">
+          <div class="media align-items-center"><img class="d-inline-block rounded-circle" src="assets/img/team/02.jpg" width="96" alt="Amanda Gallaher">
+            <div class="media-body pl-3">
+              <h6 class="font-size-base pt-1 mb-1">Amanda Gallaher</h6>
+              <p class="font-size-ms text-muted mb-0">Lead UX designer</p><a class="nav-link-style font-size-ms text-nowrap" href="mailto:a.gallaher@gmail.com"><i class="far fa-envelope fa-lg mt-2 mb-4 text-danger"></i>a.gallaher@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-grid-gutter pt-4">
+          <div class="media align-items-center"><img class="d-inline-block rounded-circle" src="assets/img/team/01.jpg" width="96" alt="Benjamin Miller">
+            <div class="media-body pl-3">
+              <h6 class="font-size-base pt-1 mb-1">Benjamin Miller</h6>
+              <p class="font-size-ms text-muted mb-0">Website development</p><a class="nav-link-style font-size-ms text-nowrap" href="mailto:b.miller@gmail.com"><i class="far fa-envelope fa-lg mt-2 mb-4 text-danger"></i> b.miller@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-grid-gutter pt-4">
+          <div class="media align-items-center"><img class="d-inline-block rounded-circle" src="assets/img/team/07.jpg" width="96" alt="Miguel Rodrigez">
+            <div class="media-body pl-3">
+              <h6 class="font-size-base pt-1 mb-1">Miguel Rodrigez</h6>
+              <p class="font-size-ms text-muted mb-0">Content manager</p><a class="nav-link-style font-size-ms text-nowrap" href="mailto:b.miller@gmail.com"><i class="far fa-envelope fa-lg mt-2 mb-4 text-danger"></i>m.rodrigez@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: We are hiring-->
+    <hr>
+
+  </main>
+<hr>
+    <!-- footer start  -->
+    <footer class="bg-grey border-top border-danger">
+      <div class="container mx-auto text-center text-sm-left position-relative py-5">
+          <div class="row">
+              <div class="col-sm-6 col-md-2">
+                  <h5 class="pb-2 border-bottom border-dark">Top Categories</h5>
+
+                  <ul class="list-unstyled d-inline-block d-sm-block">
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Ecards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Creatacard™</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Gift Cards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Birthday Ecards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Thank You Ecards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Sympathy Ecards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">SmashUps™</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-2">
+                  <h5 class="pb-2 border-bottom border-dark">Resources</h5>
+
+                  <ul class="list-unstyled d-inline-block d-sm-block">
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Inspiration</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Find Guest Orders</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Store Locator</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Member Benefits</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Promotions</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">CA Supply Chain Act</a></li>
+                      <li class="mb-2">
+                          <i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">CA Residents – Privacy Notice</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-2">
+                  <h5 class="pb-2 border-bottom border-dark">Our Company</h5>
+
+                  <ul class="list-unstyled d-inline-block d-sm-block">
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Corporate Home</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">About Us</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Gift Cards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Careers</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">News</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Sympathy Ecards</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="/Contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-2">
+                  <h5 class="pb-2 border-bottom border-dark">Our Friends</h5>
+
+                  <ul class="list-unstyled d-inline-block d-sm-block">
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Redmountain.com</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">JustWink App</a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">SmashUps™ App </a></li>
+                      <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Creatacard App</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-md-4 text-md-start">
+                  <h5 class="mb-0 text-center">Follow us</h5>
+                  <p class="mb-2 text-center">Subscribe to our newsletter</p>
+                  <form class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+                      <div class="w-75 form-group mb-3">
+                          <div class="input-group">
+                              <input class="form-control custom-select" type="text" required placeholder="Your email"
+                                  inputmode="email" /><button class="btn btn-dark btn-outline-light" type="submit">
+                                  Go!
+                              </button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="container mt-5 text-center">
+              <div class="row">
+                  <div class="col-md-2">
+                      <a href="./Contact.html" class="">Contact Us</a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="">FAQs</a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="">Term of Service</a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#" class="">Policies</a>
+                  </div>
+                  <div class="col-md-1">
+                      <a href="#" class="">Feedback</a>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="#" class="">Do Not Sell or Share My Info</a>
+                  </div>
+              </div>
+
+              <div class="m-5">
+                  <a class="text-dark mx-2" href="#">
+                      <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                  <a class="text-dark mx-2 mx-lg-0 ms-lg-3" href="#">
+                      <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                  <a class="text-dark mx-2 mx-lg-0 ms-lg-3" href="#">
+                      <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a class="text-dark mx-2 mx-lg-0 ms-lg-3" href="#">
+                      <i class="fab fa-pinterest fa-2x"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- footer end  -->
+  <button id="backToTopBtn">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./assets/Js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Js  -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+          
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+
+<script>
+    AOS.init();
+
+    $(document).ready(function () {
+        $('.has-megamenu').hover(function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+        }, function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+        });
+    });
+</script>

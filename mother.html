@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="header box-shadow-sm">
+        <div class="bg-dark topbar topbar-dark">
+            <div class="container">
+                <div class="d-md-none topbar-text dropdown"><a class="topbar-link dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Useful links</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"><i class="fas fa-headset me-1"></i>+92 3175547011</a></li>
+                        <li><a class="dropdown-item" href="order-tracking.html"><i
+                                    class="fas fa-map-marker-alt"></i>Order tracking </a></li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-inline-block topbar-text"><i class="fas fa-headset me-1"></i><span
+                        class="text-white">Support</span><a class="topbar-link">+92 3175547011</a></div>
+                <div class="d-none d-md-block">
+                    <div id="slider">
+                        <div class="topbar-text"><span>Free shipping for orders over $200</span></div>
+                        <div class="topbar-text"><span>We return money within 30 days</span></div>
+                        <div class="topbar-text"><span>Friendly 24/7 customer support</span></div>
+                    </div>
+                </div>
+                <div><a class="d-none d-md-inline-block topbar-link me-4" href="#"><i class="fas fa-map-marker-alt"></i>
+                        Order tracking</a>
+                    <div class="topbar-text dropdown"><a class="topbar-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown"><img class="me-1" width="20" src="assets/img//flags/en.png"
+                                alt="English">Eng / $ </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="dropdown-item"><select>
+                                    <option value="usd">$ USD</option>
+                                    <option value="eur">€ EUR</option>
+                                    <option value="ukp">£ UKP</option>
+                                    <option value="jpy">¥ JPY</option>
+                                </select></li>
+                            <li><a class="dropdown-item pb-1" href="#"><img class="me-1" width="20"
+                                        src="assets/img//flags/fr.png" alt="Français">Français</a></li>
+                            <li><a class="dropdown-item pb-1" href="#"><img class="me-1" width="20"
+                                        src="assets/img//flags/de.png" alt="Deutsch">Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-1" width="20"
+                                        src="assets/img//flags/it.png" alt="Italiano">Italiano</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav
+            class="navbar navbar-light navbar-expand-lg text-truncate text-uppercase text-left d-flex align-items-start align-self-center">
+            <div class="container"><a class="navbar-brand d-none d-sm-block" href="index.html" style="min-width: 7rem;">
+                    <img width="142" src="assets/img//logo-16720207682.png" alt=""></a><a
+                    class="navbar-brand d-sm-none me-2" href="index.html" style="min-width: 4.625rem;"><img width="74"
+                        src="assets/img//logo-16720207682.png" alt=""></a>
+                <div class="input-group d-none d-lg-flex mx-4">
+                    <input class="form-control custom-select form-control custom-select" type="text"
+                        placeholder="Search for products">
+                    <div class="input-group-append-overlay"><span class="input-group-text"><i
+                                class="fas fa-search fa-sm fa-fw"></i></span></div>
+
+                </div>
+                <div class="d-flex navbar-toolbar"><button class="navbar-toggler" data-toggle="collapse" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span
+                            class="navbar-toggler-icon"></span></button><a class="d-none navbar-tool" href="#"><span
+                            class="navbar-tool-tooltip">Expand menu</span>
+                        <div class="navbar-tool-icon-box"><i class="fas fa-bars"></i></div>
+                    </a><a class="navbar-tool" href="#"><span class="navbar-tool-tooltip">Wishlist</span>
+                        <div class="navbar-tool-icon-box"><i class="far fa-heart fa-lg"></i></div>
+                    </a><a class="navbar-tool ml-1 ml-lg-0 me-n1 me-lg-2" href="#">
+                        <div class="navbar-tool-icon-box"><i class="far fa-user fa-lg"></i></div>
+                        <div class="navbar-tool-text ml-n3 hide-on-small"><small>Hello, Sign in</small> My Account
+                        </div>
+                    </a>
+                    <div
+                        class="align-items-center align-content-start mb-auto justify-content-xl-start navbar-tool dropdown ml-3">
+                        <a class="text-center bg-secondary navbar-tool-icon-box dropdown-toggle"
+                            href="shop-cart.html"><span class="navbar-tool-label">4</span><i
+                                class="fas fa-shopping-cart fa-lg"></i></a><a class="navbar-tool-text hide-on-small"
+                            href="shop-cart.html"><small>My Cart</small> $265.00 </a></div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-light navbar-expand-lg navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="input-group d-lg-none my-3">
+                        <input class="form-control custom-select form-control custom-select" type="text"
+                            placeholder="Search for products">
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-light navbar-expand-md p-0 bg-red" style="background: rgb(175,24,30);">
+            <div class="container"><a class="navbar-brand align-items-center" href="#"></a><button
+                    data-toggle="collapse" class="navbar-toggler" data-target="#navbarOnHover" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarOnHover" aria-controls="navbarOnHover"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarOnHover">
+                    <ul class="navbar-nav mx-auto" style="padding-left: 0.15rem;">
+                        <li class="nav-item">
+                            <a class="nav-link text-white custom-hover" href="/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu"><a
+                                class="nav-link text-white custom-hover dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">CARDS BY OCCASSIONS <i
+                                    class="fas fa-chevron-down fa-sm fa-fw"></i></a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row">
+                                    <div class="col-md-3 justify-content-around border-end">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled lh-lg">
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                        href="./Birthday.html">Birthday Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                        href="/father.html">Father's Day Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                        href="./thankyou.html">Thankyou Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                        href="#">Encouragement / Support Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                        href="#">Friendship Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Hello
+                                                        Cards</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 border-end">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled lh-lg">
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Get Well
+                                                        Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Gift
+                                                        Card Holders</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Gift
+                                                        Enclosure Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Good
+                                                        Luck Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Goodbye
+                                                        Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a href="#">Sorry
+                                                        Cards</a></li>
+                                                <li><i class="fas fa-chevron-right fa-sm fa-fw"></i><a
+                                                        href="./categories.html">View all cards</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"><img class="img-fluid" src="assets/img//q4ucXLxoGGU.jpg"
+                                            alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title mt-3 B-a"><a href="/Birthday.html">Browse Our Birthday
+                                                    Collection</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active text-white custom-hover"
+                                href="./categories.html">VIEW ALL CARDS</a></li>
+                        <li class="nav-item dropdown" data-bs-hover="dropdown"><a
+                                class="nav-link text-white custom-hover dropdown-toggle" href="/categories.html"
+                                id="dropdownMenuLink2" data-bs-toggle="dropdown">BRANDS</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a href="#" class="dropdown-item">Joyful Greeting</a>
+                                <a href="#" class="dropdown-item"> Blissful Wishes
+                                </a>
+                                <a href="#" class="dropdown-item"> Celebrate Life
+                                </a>
+                                <a href="#" class="dropdown-item"> Delightful Expressions
+
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white custom-hover" href="/about.html">ABOUT US </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white custom-hover" href="/contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end  -->
+
+    <!-- Page Title (Shop) -->
+    <div class="page-title-overlap bg-light pt-4">
+        <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+            <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+                <nav aria-label="breadcrumb">
+                    <ol
+                        class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-star">
+                        <li class="breadcrumb-item"><a class="text-nowrap" href="index.html"><i class="fas fa-home fa-sm fa-fw"></i>Home</a></li>
+                        <li class="breadcrumb-item text-nowrap"><a href="#">Father's Day</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="order-lg-1 pr-lg-4 text-center text-lg-left">
+            </div>
+        </div>
+        <div class="container col-lg-6">
+
+            <h1 class="h3 mb-3 text-center">Mother's day</h1>
+            <p class="text-center mb-0 lh-lg">The Mother's day section of our greeting card website is dedicated to celebrating this special occasion in a truly memorable way. .<a class="text-center p-2 readmore text-danger
+                " role="" href="#"><strong>Read More</strong><br></a>
+            <p class="seemore text-center lh-lg">
+                With a wide selection of mother's day cards suited for all ages and personalities, we aim to make every mother's day a joyous and heartfelt
+            </p>
+
+            </p>
+        </div>
+        <div class="text-center">
+            
+            <a class="btn text-center text-danger p-2 readless
+            " role="" href="#"><strong>Read Less</strong><br></a>
+
+        </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container-fluid pb-5 mb-2 mb-md-4">
+        <div class="row">
+            <!-- Sidebar-->
+            <aside class="col-lg-4">
+                <!-- Sidebar-->
+                <div class="rc-sidebar rounded-lg box-shadow-lg">
+                    <div class="rc-sidebar-header box-shadow-sm">
+
+                    </div>
+                    <div class="rc-sidebar-body" data-simplebar data-simplebar-auto-hide="true">
+                        <!-- Categories-->
+                        <div class="widget-categories mb-4 pb-4 border-bottom">
+                            <h3 class="widget-title">Categories</h3>
+                            <div class="accordion mt-n1" id="shop-categories">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="accordion-heading">
+                                          <a class="collapsed" href="#card" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="shoes">
+                                            Greeting Cards<span class="accordion-indicator"> <i class="fas fa-chevron-down fa-2x fa-fw"></i> </span>
+                                          </a>
+                                        </h4>
+                                      </div>
+                                    <div class="collapse" id="card" data-bs-parent="#shop-categories">
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="input-group-overlay input-group-sm mb-2">
+                                                    <input class="form-control custom-select form-control custom-select-sm appended-form-control custom-select" type="text" placeholder="Search">
+                                                    <div class="input-group-append-overlay"><span class="input-group-text">
+                                                      <i class="fas fa-search fa-sm fa-fw"></i>
+                                                    </span></div>
+                                                  </div>
+                                                <ul class="list-unstyled pt-1" style="height: 12rem;" data-simplebar
+                                                    data-simplebar-auto-hide="false">
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="/Birthday.html">
+                                                            <span>Birthday</span>
+                                                            <span class="font-size-xs text-muted ml-3">200</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="./thankyou.html">
+                                                            <span>Thank You</span>
+                                                            <span class="font-size-xs text-muted ml-3">247</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="#">
+                                                            <span>Thinking Of You</span>
+                                                            <span class="font-size-xs text-muted ml-3">156</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="./Aniversary.html">
+                                                            <span>Anniversary</span>
+                                                            <span class="font-size-xs text-muted ml-3">310</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="#">
+                                                            <span>Good Luck</span>
+                                                            <span class="font-size-xs text-muted ml-3">402</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="#">
+                                                            <span>New Home</span>
+                                                            <span class="font-size-xs text-muted ml-3">393</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="#">
+                                                            <span>Father's Day</span>
+                                                            <span class="font-size-xs text-muted ml-3">50</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="#">
+                                                            <span>Mother's Day</span>
+                                                            <span class="font-size-xs text-muted ml-3">93</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-flex justify-content-between align-items-center"
+                                                            href="#">
+                                                            <span>Valentine's Day</span>
+                                                            <span class="font-size-xs text-muted ml-3">122</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Filter by Brand-->
+                        <div class="widget mb-4 pb-4 border-bottom">
+                            <h3 class="widget-title">Brand</h3>
+                            <div class="input-group-overlay input-group-sm mb-2">
+                                <input class="form-control custom-select form-control custom-select-sm appended-form-control custom-select" type="text"
+                                    placeholder="Search">
+                                <div class="input-group-append-overlay"><span class="input-group-text">
+                                        <i class="fas fa-search fa-sm fa-fw"></i>
+                                    </span></div>
+                            </div>
+                            <ul class="list-unstyled pt-1" style="max-height: 12rem;" data-simplebar
+                                data-simplebar-auto-hide="false">
+                                <li class="d-flex justify-content-between align-items-center mb-1">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label">Joyful Greetings</label>
+                                    </div><span class="font-size-xs text-muted">15</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-1">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label">Blissful Wishes</label>
+                                    </div><span class="font-size-xs text-muted">18</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-1">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label">Celebrate Life</label>
+                                    </div><span class="font-size-xs text-muted">103</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-1">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label">Delightful Expressions</label>
+                                    </div><span class="font-size-xs text-muted">27</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </aside>
+            <!-- Content  -->
+            <section class="col-lg-8">
+                <!-- Toolbar-->
+                <div
+                    class="d-flex justify-content-center justify-content-sm-between align-items-center pt-2 pb-4 pb-sm-5">
+                    <div class="d-flex flex-wrap">
+                        <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
+                            <label class="opacity-75 text-nowrap mr-2 d-none d-sm-block">Sort by:</label>
+                            <select class="form-control custom-select custom-select" id="sorting">
+                                <option>Popularity</option>
+                                <option>Low - Hight Price</option>
+                                <option>High - Low Price</option>
+                                <option>Average Rating</option>
+                                <option>A - Z Order</option>
+                                <option>Z - A Order</option>
+                            </select><span
+                                class="font-size-sm text-light opacity-75 text-nowrap ml-2 d-none d-md-block">of 287
+                                products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex pb-3"><a class="nav-link-style nav-link-light mr-3" href="#">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </a><span class="font-size-md">1 / 5</span><a class="nav-link-style nav-link-light ml-3"
+                            href="#">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a></div>
+                    <div class="d-none d-sm-flex pb-3">
+                        <a class="btn btn-icon nav-link-style nav-link-light mr-2" href="shop-grid-ls.html">
+                            <i class="fas fa-list fa-lg fa-fw"></i>
+                        </a>
+                        <a class="btn btn-icon nav-link-style bg-light text-dark disabled opacity-100" href="#">
+                            <i class="fas fa-list fa-lg fa-fw"></i>
+                        </a>
+                    </div>
+                </div>
+                
+               
+          <!-- Features card  -->
+
+    <div class="container-fluid">
+        <!-- first row  -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img class="img-fluid card-img-top"
+                                src="assets/img/cards/b1.jpg" alt="" style="width: 100%;"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h5 class="title"><a href="#">Woo Hoo!</a></h5>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">$3.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img class="img-fluid card-img-top"
+                                src="assets/img/cards/b2.jpg" alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">God's Goodness</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b3.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Celebration Wishes</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second row  -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b4.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Unchanging Love</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b5.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Birthday Delights</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b6.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Party Time!</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- third row  -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b7.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Birthday Magic</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b8.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Sending Smiles</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="product-grid2 my-4">
+                    <div class="product-image2"><a href="#"><img src="assets/img/cards/b9.jpg" class="card-img-top"
+                                alt="mother"></a>
+                        <ul class="social">
+                            <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul><a class="add-to-cart" href="">Add to cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Birthday Cheers</a></h3>
+                        <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                            class="price">500</span>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth row  -->
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="product-grid2 my-4">
+                        <div class="product-image2"><a href="#"><img src="assets/img/cards/b10.jpg" class="card-img-top"
+                                    alt="mother"></a>
+                            <ul class="social">
+                                <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                            </ul><a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Cake and Laughter</a></h3>
+                            <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                    class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                    class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                                class="price">500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="product-grid2 my-4">
+                        <div class="product-image2"><a href="#"><img src="assets/img/cards/b11.jpg" class="card-img-top"
+                                    alt="mother"></a>
+                            <ul class="social">
+                                <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                            </ul><a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Make a Wish</a></h3>
+                            <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                    class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                    class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                                class="price">500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="product-grid2 my-4">
+                        <div class="product-image2"><a href="#"><img src="assets/img/cards/b12.jpg" class="card-img-top"
+                                    alt="mother"></a>
+                            <ul class="social">
+                                <li>  <a href="#" class="btn btn-primary" id="dialogButton" data-bs-toggle="modal"
+                                                            data-bs-target="#dynamicModal" data-tip="Quick View">
+
+                                                            <i class="fas fa-eye"></i>
+
+                                                        </a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                            </ul><a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Birthday Sparkle</a></h3>
+                            <div class="rating hidden-sm"><i class="fas fa-star price-text-color"></i><i
+                                    class="fas fa-star price-text-color"></i><i class="fas fa-star price-text-color"></i><i
+                                    class="fas fa-star price-text-color"></i><i class="fas fa-star"></i></div><span
+                                class="price">500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+              </section>
+            </div>
+          </div>
+
+
+    <!-- footer start  -->
+    <footer class="bg-grey border-top border-danger">
+        <div class="container mx-auto text-center text-sm-start position-relative py-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="pb-2 border-bottom border-dark">Top Categories</h5>
+
+                    <ul class="list-unstyled d-inline-block d-sm-block">
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Ecards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Creatacard™</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Gift Cards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="./Birthday.html">Birthday Ecards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="./thankyou.html">Thank You Ecards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Sympathy Ecards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">SmashUps™</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="pb-2 border-bottom border-dark">Resources</h5>
+
+                    <ul class="list-unstyled d-inline-block d-sm-block">
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Inspiration</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Find Guest Orders</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Store Locator</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Member Benefits</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Promotions</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">CA Supply Chain Act</a></li>
+                        <li class="mb-2">
+                            <i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">CA Residents – Privacy Notice</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="pb-2 border-bottom border-dark">Our Company</h5>
+
+                    <ul class="list-unstyled d-inline-block d-sm-block">
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Corporate Home</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="./about.html">About Us</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Gift Cards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Careers</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">News</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Sympathy Ecards</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="/Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-2">
+                    <h5 class="pb-2 border-bottom border-dark">Our Friends</h5>
+
+                    <ul class="list-unstyled d-inline-block d-sm-block">
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Redmountain.com</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">JustWink App</a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">SmashUps™ App </a></li>
+                        <li class="mb-2"><i class="fas fa-chevron-right fa-sm fa-fw"></i><a class="" href="#">Creatacard App</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-md-start">
+                    <h5 class="mb-0 text-center">Follow us</h5>
+                    <p class="mb-2 text-center">Subscribe to our newsletter</p>
+                    <form class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+                        <div class="w-75 form-group mb-3">
+                            <div class="input-group">
+                                <input class="form-control custom-select" type="text" required placeholder="Your email"
+                                    inputmode="email" /><button class="btn btn-dark btn-outline-light" type="submit">
+                                    Go!
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container mt-5 text-center">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="./Contact.html" class="">Contact Us</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="">FAQs</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="">Term of Service</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="">Policies</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#" class="">Feedback</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="">Do Not Sell or Share My Info</a>
+                    </div>
+                </div>
+
+                <div class="m-5">
+                    <a class="text-dark mx-2" href="#">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a class="text-dark mx-2 mx-lg-0 ms-lg-3" href="#">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a class="text-dark mx-2 mx-lg-0 ms-lg-3" href="#">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a class="text-dark mx-2 mx-lg-0 ms-lg-3" href="#">
+                        <i class="fab fa-pinterest fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+       <!-- Modal -->
+       <div class="modal fade" id="dynamicModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm modal-xl custom-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dynamicModalLabel">Quick View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <!-- Gallery + details-->
+                        <div class="bg-light box-shadow-lg rounded-lg px-4 py-3 mb-5">
+                            <div class="px-lg-3">
+                                <div class="row">
+                                    <!-- Product gallery-->
+                                    <div class="col-lg-7">
+                                        <div>
+                                            <div class="order-sm-2">
+                                                <div class="rc-preview-item active" id="first">
+                                                    <img class="rc-image" src="assets/img/cards/f1.jpg" alt="Product image">
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Product details-->
+                                    <div class="col-lg-5 pt-4 pt-lg-0">
+                                        <div class="product-details ml-auto pb-3">
+                                            <h2>Celebrate Dad</h2>
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <a href="#reviews" data-scroll class="text-body align-middle mt-1 ml-1">
+                                                    <div class="star-rating">
+                                                        <i class="fas fa-star price-text-color"></i>
+                                                        <i class="fas fa-star price-text-color"></i>
+                                                        <i class="fas fa-star price-text-color"></i>
+                                                        <i class="fas fa-star price-text-color"></i>
+                                                        
+                                                    </div>
+                                                    <span
+                                                        class="d-inline-block font-size-sm text-body align-middle mt-1 ml-1">74
+                                                        Reviews</span>
+                                                </a>
+                                                <button class="btn-wishlist btn btn-light" type="button"
+                                                    data-bs-toggle="tooltip" title="Add to wishlist">
+                                                    <i class="fas fa-heart fa-lg fa-fw"></i>
+                                                </button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <span
+                                                    class="h3 font-weight-normal text-accent mr-1">$18.<small>99</small></span>
+                                                <del class="text-muted font-size-lg mr-3">$25.<small>00</small></del>
+                                                <span
+                                                    class="badge bg-danger text-uppercase align-middle mt-n2">Sale</span>
+                                            </div>
+
+
+                                            <form class="mb-grid-gutter my-2" method="post">
+                                                <div class="form-group d-flex align-items-center">
+                                                    <select class="custom-select mx-3" style="width: 5rem;">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                    <button class="btn btn-primary btn-shadow btn-block" type="submit">
+                                                        <i class="fas fa-cart-plus fa-lg fa-fw font-size-lg mr-2"></i>Add to Cart
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                            <!-- Product panels -->
+                                            <div class="accordion mb-4" id="productPanels">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h3 class="accordion-heading">
+                                                            <a href="#productInfo" role="button"
+                                                                data-bs-toggle="collapse" aria-expanded="true"
+                                                                aria-controls="productInfo">
+                                                                Summary
+                                                                <span class="accordion-indicator">
+                                                                    <i class="fas fa-chevron-up fa-lg fa-fw"></i>
+                                                                </span>
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="collapse show" id="productInfo"
+                                                        data-parent="#productPanels">
+                                                        <div class="card-body">
+
+
+                                                            <ul class="font-size-sm pl-4">
+                                                                <li>Celebrate them on Father day</li>
+                                                                <li>Perfect for anyone you lovingly tease</li>
+                                                                <li>Psalm 128:5 The Message</li>
+
+                                                            </ul>
+                                                            <h6 class="font-size-sm mb-2">Art. No.</h6>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h3 class="accordion-heading">
+                                                            <a href="#productInfo" role="button"
+                                                                data-bs-toggle="collapse" aria-expanded="true"
+                                                                aria-controls="productInfo">
+                                                                Product Specification
+                                                                <span class="accordion-indicator">
+                                                                    <i class="fas fa-chevron-up fa-lg fa-fw"></i>
+                                                                </span>
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="collapse show" id="productInfo"
+                                                        data-parent="#productPanels">
+                                                        <div class="card-body">
+
+
+
+
+
+
+
+                                                            <ul class="font-size-sm pl-4">
+                                                                <li> 3 premium cards and envelopes</li>
+                                                                <li>The Message Scripture text</li>
+                                                                <li>Printed on recycled paper - 20% recycled fiber</li>
+                                                                <li>Made in U.S.A</li>
+                                                                <li>Folded card size: 4 11/16” x 6 13/16”</li>
+                                                            </ul>
+                                                            <h6 class="font-size-sm mb-2">Art. No.</h6>
+                                                            <ul class="font-size-sm pl-4 mb-0">
+                                                                <li>183260098</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h3 class="accordion-heading">
+                                                            <a class="collapsed" href="#shippingOptions" role="button"
+                                                                data-bs-toggle="collapse" aria-expanded="true"
+                                                                aria-controls="shippingOptions">
+                                                                Shipping options
+                                                                <span class="accordion-indicator"> <i
+                                                                        class="fas fa-chevron-up fa-lg fa-fw"></i>
+                                                                </span>
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="collapse" id="shippingOptions"
+                                                        data-parent="#productPanels">
+                                                        <div class="card-body font-size-sm">
+                                                            <div
+                                                                class="d-flex justify-content-between border-bottom pb-2">
+                                                                <div>
+                                                                    <div class="font-weight-semibold text-dark">Courier
+                                                                    </div>
+                                                                    <div class="font-size-sm text-muted">2 - 4 days
+                                                                    </div>
+                                                                </div>
+                                                                <div>$26.50</div>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between border-bottom py-2">
+                                                                <div>
+                                                                    <div class="font-weight-semibold text-dark">Local
+                                                                        shipping</div>
+                                                                    <div class="font-size-sm text-muted">up to one week
+                                                                    </div>
+                                                                </div>
+                                                                <div>$10.00</div>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between border-bottom py-2">
+                                                                <div>
+                                                                    <div class="font-weight-semibold text-dark">Flat
+                                                                        rate</div>
+                                                                    <div class="font-size-sm text-muted">5 - 7 days
+                                                                    </div>
+                                                                </div>
+                                                                <div>$33.85</div>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between border-bottom py-2">
+                                                                <div>
+                                                                    <div class="font-weight-semibold text-dark">UPS
+                                                                        ground shipping</div>
+                                                                    <div class="font-size-sm text-muted">4 - 6 days
+                                                                    </div>
+                                                                </div>
+                                                                <div>$18.00</div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between pt-2">
+                                                                <div>
+                                                                    <div class="font-weight-semibold text-dark">Local
+                                                                        pickup from store</div>
+                                                                    <div class="font-size-sm text-muted">&mdash;</div>
+                                                                </div>
+                                                                <div>$0.00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h3 class="accordion-heading">
+                                                            <a class="collapsed" href="#localStore" role="button"
+                                                                data-bs-toggle="collapse" aria-expanded="true"
+                                                                aria-controls="localStore">
+                                                                Find in local store
+                                                                <span class="accordion-indicator"><i
+                                                                        class="fas fa-chevron-up fa-lg fa-fw"></i></span>
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="collapse" id="localStore" data-parent="#productPanels">
+                                                        <div class="card-body">
+                                                            <select class="custom-select">
+                                                                <option value>Select your country</option>
+                                                                <option value="Pakistan">Pakistan</option>
+                                                                <option value="India">India</option>
+                                                                <option value="Bangladesh">Bangladesh</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sharing -->
+                                            <h6 class="d-inline-block align-middle font-size-base my-2 mr-2">Share:</h6>
+                                            <a class="share-btn sb-twitter mr-2 my-2" href="#"> <i class="fab fa-twitter fa-lg"></i>Twitter</a>
+                                            <a class="share-btn sb-instagram mr-2 my-2" href="#"><i class="fab fa-instagram fa-lg"></i>Instagram</a>
+                                            <a class="share-btn sb-facebook my-2" href="#"><i class="fab fa-facebook fa-lg"></i>Facebook</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTopBtn">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+<script src="./assets/Js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.seemore').hide();
+        $('.readless').hide();
+
+        $('.readmore').click(function () {
+            $('.seemore').show();
+            $('.readmore').hide();
+            $('.readless').show();
+        });
+
+        $('.readless').click(function () {
+            $('.seemore').hide();
+            $('.readmore').show();
+            $('.readless').hide();
+        });
+
+
+    });
+
+</script>
